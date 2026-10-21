@@ -1,0 +1,42 @@
+/* Bebelingo yasal sayfaları: sistem yazı tipi (çevrimdışı çalışır), marka renkleri, mobil uyumlu. */
+:root {
+  --teal: #0180a0;
+  --teal-dark: #015f77;
+  --teal-soft: #d9f1f5;
+  --cream: #fff7ec;
+  --ink: #2b2440;
+  --muted: #5d566e;
+  --line: #efdcc4;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font: 17px/1.6 ui-rounded, -apple-system, "SF Pro Rounded", system-ui, "Segoe UI", Roboto, sans-serif;
+}
+header { background: var(--teal); color: #fff; }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; }
+header a { color: #fff; text-decoration: none; font-weight: 700; }
+header .brand { font-size: 1.25rem; letter-spacing: .2px; }
+header nav { display: flex; gap: 14px; flex-wrap: wrap; font-size: .95rem; }
+header nav a { font-weight: 600; opacity: .92; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+main.wrap { padding-top: 8px; padding-bottom: 40px; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 22px 0 6px; }
+h2 { font-size: 1.2rem; margin: 28px 0 6px; color: var(--teal-dark); }
+h3 { font-size: 1.05rem; margin: 18px 0 4px; }
+p, li { color: var(--ink); }
+.meta { color: var(--muted); font-size: .92rem; margin: 0 0 14px; }
+.lang { display: inline-block; margin: 6px 0 4px; font-size: .95rem; }
+a { color: var(--teal-dark); }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; margin: 14px 0; }
+.note { background: var(--teal-soft); border-radius: 14px; padding: 12px 14px; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+details { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 10px 14px; margin: 10px 0; }
+summary { font-weight: 700; cursor: pointer; }
+footer { color: var(--muted); font-size: .88rem; padding: 18px 16px 32px; text-align: center; }
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+.buttons a { background: var(--teal); color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 999px; font-weight: 700; }
